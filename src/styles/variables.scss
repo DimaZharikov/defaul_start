@@ -1,0 +1,113 @@
+$black: #000000;
+$white: #ffffff;
+$blue: #1191d1;
+$blue-hover: #0F5487;
+$red: #ff0000;
+$yellow: #ffd740;
+
+$primary: #d1497c;
+$secondary: #381e56;
+$tertiary: #63428c;
+$quaternary: #a386c6;
+
+/* lightest to darkest */
+$grey-1: #f0f1f3;
+$grey-2: #e1e3e7;
+$grey-3: #c3c7cf;
+$grey-4: #a6aab6;
+$grey-5: #888e9e;
+$grey-6: #6a7285;
+$grey-7: #444957;
+$grey-8: #333333;
+$grey-9: #cfd0d1;
+
+$blue-1: #eaf2f9;
+$blue-2: #cde3f1;
+$blue-3: #204871;
+$blue-4: #3496b6;
+$blue-5: #13304c;
+$blue-6: #beb4d0;
+
+$clouplet-1: $grey-1;
+$clouplet-2: $grey-2;
+$clouplet-3: $grey-3;
+
+$trialpredict-primary: #1b8a9b;
+$trialpredict-secondary: #136370;
+$trialpredict-tertiary: #aee8f1;
+$trialpredict-quaternary: #8dc5cd;
+$trialpredict-quinary: #3A95A5;
+
+$citelineEngage-primary: #68d2df;
+$citelineEngage-secondary: #204871;
+
+$entitlement-default-dark: $secondary;
+$entitlement-default-light: #e5dcef;
+$entitlement-green-dark: $trialpredict-primary;
+$entitlement-green-light: $trialpredict-tertiary;
+$entitlement-blue-dark: $citelineEngage-primary;
+$entitlement-blue-light: $citelineEngage-secondary;
+
+$tableHeaderHeight: 64;
+$tableHeaderReducedHeight: 40;
+
+$table-primary: #e5dcef;
+$table-secondary: #f2eef7;
+
+$table-primary-new: $grey-1;
+$table-secondary-new: $white;
+
+$diseaseTierHeader: #c23169;
+$diseaseTierCell1: #fcbfe5;
+$diseaseTierCell2: #fedef4;
+
+$rowSelectorShadow: 3px 0 8px -5px rgba(0, 0, 0, .5);
+$rowSelectorShadowOld: -3px 0 8px -5px rgba(0, 0, 0, .5);
+$shadow: 0 2px 2px 0 rgba(0, 0, 0, .2);
+
+$active-button: rgba(158, 158, 158, .4);
+$active-color: #888E9E;
+
+$disabled-color: rgba(0, 0, 0, .26);
+
+$marker-color: #a4dc23;
+
+$timelineRowHoverColor: rgba(225, 227, 231, 0.5);
+
+$mercury: #e5e5e5;
+
+/* override MDL's desktop breakpoint to stop layout breaking at narrow widths */
+$grid-desktop-breakpoint: 500px;
+
+$small-screen-width: 1280px;
+$selected-row-width: 55px;
+$selected-row-reduced-width: 39px;
+$selected-row-reduced-width-with-border: 40px;
+
+:export {
+  white: $white;
+  yellow: $yellow;
+
+  primary: $primary;
+  secondary: $secondary;
+  tertiary: $tertiary;
+
+  tablePrimary: $table-primary;
+  tableSecondary: $table-secondary;
+
+  grey1: $grey-1;
+  grey2: $grey-2;
+  grey3: $grey-3;
+  grey4: $grey-4;
+  grey5: $grey-5;
+  grey6: $grey-6;
+  grey7: $grey-7;
+  grey8: $grey-8;
+  grey9: $grey-9;
+
+  markerColor: $marker-color;
+
+  timelineRowHoverColor: $timelineRowHoverColor;
+
+  mercury: $mercury;
+}

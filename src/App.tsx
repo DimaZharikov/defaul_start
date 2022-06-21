@@ -1,20 +1,12 @@
-import React, { useState } from 'react';
-import './App.css';
+import Layout from './pages/Layout.container';
+import WrapperContainer from './pages/Wrapper.container';
 
-const App = (): JSX.Element => {
-  const [state, setState] = useState<number>(0);
-  const calcSum = (): void => setState(state + 1);
+import './App.scss';
 
-  return (
-    <>
-      <h1>
-        calc: { state }
-      </h1>
-      <button onClick={calcSum} type="button">
-        click me
-      </button>
-    </>
-  );
-};
+const App = (): JSX.Element => (
+  <Layout>
+    <WrapperContainer />
+  </Layout>
+);
 
 export default App;

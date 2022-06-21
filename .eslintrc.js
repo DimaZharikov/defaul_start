@@ -28,6 +28,9 @@ module.exports = {
     'react-hooks',
   ],
   rules: {
+    'react/jsx-uses-react': 'off',
+    'react/react-in-jsx-scope': 'off',
+    'react/jsx-props-no-spreading': 'off',
     'react/jsx-one-expression-per-line': 'off',
     'no-shadow': 'off',
     'no-use-before-define': 'off',
@@ -74,6 +77,12 @@ module.exports = {
   overrides: [
     {
       files: ['*.ts', '*.tsx']
+    },
+    {
+      files: ['./src/services/**/*.ts'],
+      rules: {
+        '@typescript-eslint/default-param-last': 'off'
+      }
     }
   ],
 };
